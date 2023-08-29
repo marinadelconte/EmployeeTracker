@@ -5,7 +5,6 @@ INSERT INTO department (department_name)
             ("IT");
 
 
-
 INSERT INTO role (title, salary, department_id)
     VALUES("Software Engineer", 80000, 4),
             ("Communications Coordinator", 65000, 3),
