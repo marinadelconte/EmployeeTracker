@@ -1,7 +1,5 @@
 import inquirer from "inquirer";
-import fs from "fs/promises";
 import mysql from "mysql2";
-import { log } from "console";
 
 const db = mysql.createConnection(
     {
@@ -80,7 +78,7 @@ async function addRole() {
 
 async function addEmployee() {
     let result = await db.promise().query("SELECT * FROM EMPLOYEE;");
-    let managerChoices = result[0].map(({ id, first_name, last_name, role_id, manager_id }) => ({ name: first_name, last_name, value: id, role_id, manager_id }))
+    let managerChoices = result[0].map(({first_name, last_name, role_id}) => ({ name: first_name, last_name, value: role_id}))
     let action = await inquirer
         .prompt([
             {
