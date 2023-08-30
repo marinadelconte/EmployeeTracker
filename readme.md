@@ -1,3 +1,5 @@
+# Employee Tracker
+
 ## Description
 The Employee Tracker database uses inquirer and SQL to display company information including an employee's name, id, job title, department, manager id, and salary. 
 
