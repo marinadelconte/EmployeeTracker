@@ -9,6 +9,8 @@ To use this application first run "npm i" in integrated terminal. Next to begin 
 ## Usage
 Below is a link to a video that shows the application in use:
 
+https://drive.google.com/file/d/1YGHp_Mly81-9QGtSEk0ya2vADkhZuwcU/view
+
 
 ## Credits
 To work on this assignment I used examples from class to get started, as well as additional resources that were provided in the project readme. I also worked with my tutor in areas where I got stuck.
