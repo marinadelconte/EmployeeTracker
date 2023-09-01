@@ -76,7 +76,7 @@ async function addRole() {
 
 async function addEmployee() {
     let result = await db.promise().query("SELECT * FROM EMPLOYEE;");
-    let managerChoices = result[0].map(({ first_name, last_name, role_id }) => ({ name: first_name, last_name, value: role_id }))
+    let managerChoices = result[0].map(({ first_name, last_name, role_id }) => ({ name: first_name, last_name, role_id }))
     let action = await inquirer
         .prompt([
             {
@@ -92,13 +92,12 @@ async function addEmployee() {
             {
                 type: 'input',
                 name: 'role',
-                message: 'What is their role?',
+                message: 'What is their role by Id?',
             },
             {
-                type: 'list',
+                type: 'input',
                 name: 'manager',
-                message: 'Who is their manager?',
-                choices: managerChoices
+                message: 'Who is their manager by Id?',
             },
         ])
 
